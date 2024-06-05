@@ -14,6 +14,8 @@ public class Transaction
 
     public ETransactionType Type { get; set; } = ETransactionType.WithDraw;
 
+    public decimal Amount { get; set; }
+
     public long CategoryId { get; set; }
 
     public Category Category { get; set; } = null!;
